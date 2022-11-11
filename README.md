@@ -8,6 +8,7 @@ A walk through the Design Pattens with Java, with variants and many examples of 
 - 2. Builder
 - 3. Factory
 - 4. Abstract Factory
+- 5. Prototype
 
 #### Structural
 
