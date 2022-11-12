@@ -1,6 +1,6 @@
-# Design Pattens in Java 2022
+# Design Patterns in Java 2022
 
-A walk through the Design Pattens with Java, with variants and many examples of each
+A walk through the Design Patterns with Java, with variants and many examples of each
 
 #### Creationals
 
