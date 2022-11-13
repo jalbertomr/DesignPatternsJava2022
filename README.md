@@ -12,6 +12,10 @@ A walk through the Design Patterns with Java, with variants and many examples of
 
 #### Structural
 
+- 1. Adapter
+- 2. Composite
 
 
 #### Behavioral
+
+- 1. Delegator
