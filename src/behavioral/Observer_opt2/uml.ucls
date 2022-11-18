@@ -1,52 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="true" generalizations="true" realizations="true" 
   associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="structural.adapter_wrapper.Client_Main" project="DesignPatternsJava2022" 
-    file="/DesignPatternsJava2022/src/structural/adapter_wrapper/Client_Main.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="120" x="931" y="67"/>    
+  <class id="1" language="java" name="behavioral.Observer_opt2.ConcreteObserverA" project="DesignPatternsJava2022" 
+    file="/DesignPatternsJava2022/src/behavioral/Observer_opt2/ConcreteObserverA.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="148" y="434"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="2" language="java" name="structural.adapter_wrapper.Target_Guitar" project="DesignPatternsJava2022" 
-    file="/DesignPatternsJava2022/src/structural/adapter_wrapper/Target_Guitar.java" binary="false" 
+  <class id="2" language="java" name="behavioral.Observer_opt2.ConcreteObserverB" project="DesignPatternsJava2022" 
+    file="/DesignPatternsJava2022/src/behavioral/Observer_opt2/ConcreteObserverB.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="99" width="120" x="655" y="199"/>    
+    <position height="-1" width="-1" x="344" y="432"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="3" language="java" name="behavioral.Observer_opt2.IObserver" project="DesignPatternsJava2022" 
+    file="/DesignPatternsJava2022/src/behavioral/Observer_opt2/IObserver.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="235" y="262"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="3" language="java" name="structural.adapter_wrapper.Adaptee_AcousticGuitar" 
-    project="DesignPatternsJava2022" 
-    file="/DesignPatternsJava2022/src/structural/adapter_wrapper/Adaptee_AcousticGuitar.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="553" y="600"/>    
+  <class id="4" language="java" name="behavioral.Observer_opt2.Subject" project="DesignPatternsJava2022" 
+    file="/DesignPatternsJava2022/src/behavioral/Observer_opt2/Subject.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="610" y="260"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="structural.adapter_wrapper.DirectTarget_ElectricGuitar" 
-    project="DesignPatternsJava2022" 
-    file="/DesignPatternsJava2022/src/structural/adapter_wrapper/DirectTarget_ElectricGuitar.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="887" y="430"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="structural.adapter_wrapper.AdapterWrapper_ElectricAcousticGuitar" 
-    project="DesignPatternsJava2022" 
-    file="/DesignPatternsJava2022/src/structural/adapter_wrapper/AdapterWrapper_ElectricAcousticGuitar.java" 
-    binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="556" y="429"/>    
+  <class id="5" language="java" name="behavioral.Observer_opt2.ObserverDemo" project="DesignPatternsJava2022" 
+    file="/DesignPatternsJava2022/src/behavioral/Observer_opt2/ObserverDemo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="590" y="75"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -54,36 +49,32 @@
     </display>  
   </class>  
   <realization id="6">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="2"/>  
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
   </realization>  
-  <association id="7">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="8" name="adaptee_acousticGuitar">        
-        <position height="0" width="0" x="172" y="123"/>      
-      </attribute>      
-      <multiplicity id="9" minimum="0" maximum="1">        
-        <position height="0" width="0" x="172" y="123"/>      
-      </multiplicity>    
+  <dependency id="7">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <realization id="9">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="3"/>  
+  </realization>  
+  <association id="10">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="11" name="observers"/>      
+      <multiplicity id="12" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="10">    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <dependency id="11">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="2"/>  
-  </dependency>  
-  <dependency id="12">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="4"/>  
-  </dependency>  
   <dependency id="13">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="2"/>  
   </dependency>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
