@@ -1,6 +1,6 @@
 package creational.Builder;
 
-public class Main {
+public class BuilderDemo {
 	
 	public static void main(String args[]) {
 		

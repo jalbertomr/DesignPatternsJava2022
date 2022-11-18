@@ -19,3 +19,5 @@ A walk through the Design Patterns with Java, with variants and many examples of
 #### Behavioral
 
 - 1. Delegator
+- 2. Observer
+- 3. Interpreter
