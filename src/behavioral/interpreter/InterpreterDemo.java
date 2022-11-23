@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 import behavioral.interpreter.Interpreter.Expression;
 
+// reference wikipedia
 public class InterpreterDemo {
 
 	public static void main(final String[] args) {
